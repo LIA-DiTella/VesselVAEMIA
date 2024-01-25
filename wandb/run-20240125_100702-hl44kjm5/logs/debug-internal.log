@@ -1,0 +1,397 @@
+2024-01-25 10:07:09,619 INFO    StreamThr :11332 [internal.py:wandb_internal():86] W&B internal server running at pid: 11332, started at: 2024-01-25 10:07:09.618291
+2024-01-25 10:07:09,620 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status
+2024-01-25 10:07:09,620 INFO    WriterThread:11332 [datastore.py:open_for_write():85] open: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\run-hl44kjm5.wandb
+2024-01-25 10:07:09,621 DEBUG   SenderThread:11332 [sender.py:send():379] send: header
+2024-01-25 10:07:09,622 DEBUG   SenderThread:11332 [sender.py:send():379] send: run
+2024-01-25 10:07:10,316 INFO    SenderThread:11332 [dir_watcher.py:__init__():211] watching files in: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files
+2024-01-25 10:07:10,316 INFO    SenderThread:11332 [sender.py:_start_run_threads():1121] run started: hl44kjm5 with start time 1706188029.285217
+2024-01-25 10:07:10,320 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:07:10,320 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:07:10,328 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: check_version
+2024-01-25 10:07:10,328 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: check_version
+2024-01-25 10:07:10,865 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: run_start
+2024-01-25 10:07:10,872 DEBUG   HandlerThread:11332 [system_info.py:__init__():31] System info init
+2024-01-25 10:07:10,872 DEBUG   HandlerThread:11332 [system_info.py:__init__():46] System info init done
+2024-01-25 10:07:10,872 INFO    HandlerThread:11332 [system_monitor.py:start():181] Starting system monitor
+2024-01-25 10:07:10,872 INFO    SystemMonitor:11332 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-01-25 10:07:10,872 INFO    HandlerThread:11332 [system_monitor.py:probe():201] Collecting system info
+2024-01-25 10:07:10,876 INFO    SystemMonitor:11332 [interfaces.py:start():190] Started cpu monitoring
+2024-01-25 10:07:10,877 INFO    SystemMonitor:11332 [interfaces.py:start():190] Started disk monitoring
+2024-01-25 10:07:10,877 INFO    SystemMonitor:11332 [interfaces.py:start():190] Started gpu monitoring
+2024-01-25 10:07:10,884 INFO    SystemMonitor:11332 [interfaces.py:start():190] Started memory monitoring
+2024-01-25 10:07:10,887 DEBUG   HandlerThread:11332 [system_info.py:probe():195] Probing system
+2024-01-25 10:07:10,893 INFO    SystemMonitor:11332 [interfaces.py:start():190] Started network monitoring
+2024-01-25 10:07:10,894 DEBUG   HandlerThread:11332 [system_info.py:_probe_git():180] Probing git
+2024-01-25 10:07:10,976 DEBUG   HandlerThread:11332 [system_info.py:_probe_git():188] Probing git done
+2024-01-25 10:07:10,976 DEBUG   HandlerThread:11332 [system_info.py:probe():240] Probing system done
+2024-01-25 10:07:10,976 DEBUG   HandlerThread:11332 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.10.12', 'heartbeatAt': '2024-01-25T13:07:10.887568', 'startedAt': '2024-01-25T13:07:02.808100', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/LIA-DiTella/VesselVAE.git', 'commit': '1c0bdcbf3d9c69f00e6416dc0581da7f592fb28d'}, 'email': 'paulaadifeldman1@gmail.com', 'root': 'C:/Users/User/Documents/vesselvaeashish/VesselVAE', 'host': 'DESKTOP-ET9L3J1', 'username': 'User', 'executable': 'c:\\Users\\User\\anaconda3\\envs\\py_torch\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3901.0, 'min': 0.0, 'max': 3901.0}, 'cpu_freq_per_core': [{'current': 3901.0, 'min': 0.0, 'max': 3901.0}], 'disk': {'total': 446.5058822631836, 'used': 315.21352767944336}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 31.374500274658203}}
+2024-01-25 10:07:10,977 INFO    HandlerThread:11332 [system_monitor.py:probe():211] Finished collecting system info
+2024-01-25 10:07:10,977 INFO    HandlerThread:11332 [system_monitor.py:probe():214] Publishing system info
+2024-01-25 10:07:10,977 DEBUG   HandlerThread:11332 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-01-25 10:07:10,977 DEBUG   HandlerThread:11332 [system_info.py:_save_pip():67] Saving pip packages done
+2024-01-25 10:07:10,977 DEBUG   HandlerThread:11332 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-01-25 10:07:10,980 ERROR   HandlerThread:11332 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] El sistema no puede encontrar el archivo especificado
+Traceback (most recent call last):
+  File "c:\Users\User\anaconda3\envs\py_torch\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "c:\Users\User\anaconda3\envs\py_torch\lib\subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\User\anaconda3\envs\py_torch\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\User\anaconda3\envs\py_torch\lib\subprocess.py", line 1456, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado
+2024-01-25 10:07:10,980 DEBUG   HandlerThread:11332 [system_info.py:_save_conda():86] Saving conda packages done
+2024-01-25 10:07:10,980 INFO    HandlerThread:11332 [system_monitor.py:probe():216] Finished publishing system info
+2024-01-25 10:07:10,981 DEBUG   SenderThread:11332 [sender.py:send():379] send: files
+2024-01-25 10:07:10,981 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2024-01-25 10:07:10,993 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:07:10,993 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:07:11,328 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-metadata.json
+2024-01-25 10:07:11,328 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:07:11,329 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\requirements.txt
+2024-01-25 10:07:11,329 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\conda-environment.yaml
+2024-01-25 10:07:11,536 DEBUG   SenderThread:11332 [sender.py:send():379] send: telemetry
+2024-01-25 10:07:12,011 INFO    wandb-upload_0:11332 [upload_job.py:push():131] Uploaded file C:\Users\User\AppData\Local\Temp\tmpi7drtroawandb\vcwu11xt-wandb-metadata.json
+2024-01-25 10:07:13,107 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:07:13,108 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:07:13,109 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:07:13,110 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:07:13,338 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:07:13,338 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\output.log
+2024-01-25 10:07:15,156 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:15,348 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\output.log
+2024-01-25 10:07:20,188 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:25,218 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:26,000 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:07:26,001 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:07:30,282 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:32,347 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:07:32,348 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:07:32,348 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:07:32,349 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:07:32,454 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:07:35,377 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:40,411 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:41,015 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:07:41,016 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:07:41,509 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\config.yaml
+2024-01-25 10:07:46,290 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:51,325 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:07:51,444 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:07:51,445 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:07:51,445 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:07:51,446 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:07:51,581 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:07:56,019 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:07:56,019 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:07:57,218 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:02,249 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:07,279 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:10,413 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:08:10,413 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:08:10,414 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:08:10,415 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:08:10,698 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:08:10,905 DEBUG   SystemMonitor:11332 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-01-25 10:08:10,905 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:08:11,017 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:08:11,018 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:08:13,222 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:18,253 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:23,287 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:26,034 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:08:26,034 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:08:28,321 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:29,469 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:08:29,470 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:08:29,470 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:08:29,470 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:08:29,822 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:08:33,499 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:38,534 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:40,916 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:08:41,044 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:08:41,044 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:08:44,271 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:48,331 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:08:48,332 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:08:48,332 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:08:48,333 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:08:48,955 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:08:49,337 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:54,372 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:08:56,049 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:08:56,049 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:09:00,283 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:05,315 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:07,525 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:09:07,525 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:09:07,526 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:09:07,526 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:09:08,082 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:09:10,544 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:10,928 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:09:11,056 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:09:11,056 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:09:16,332 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:21,362 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:26,062 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:09:26,062 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:09:26,835 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:09:26,836 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:09:26,836 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:09:26,837 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:26,838 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:09:27,213 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:09:31,879 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:36,915 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:40,943 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:09:41,071 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:09:41,071 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:09:42,365 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:46,161 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:09:46,161 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:09:46,162 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:09:46,162 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:09:46,343 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:09:48,181 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:53,217 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:09:56,077 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:09:56,077 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:09:58,330 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:03,365 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:05,434 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:10:05,435 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:10:05,435 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:10:05,435 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:10:05,476 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:10:08,465 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:10,957 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:10:11,101 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:10:11,101 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:10:14,314 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:19,348 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:24,384 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:25,020 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:10:25,021 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:10:25,021 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:10:25,022 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:10:25,613 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:10:26,107 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:10:26,107 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:10:26,618 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\output.log
+2024-01-25 10:10:30,329 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:35,353 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:40,385 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:40,961 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:10:41,105 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:10:41,105 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:10:44,324 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:10:44,324 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:10:44,324 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:10:44,325 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:10:44,720 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:10:46,336 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:51,371 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:10:56,104 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:10:56,105 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:10:57,350 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:02,388 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:03,537 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:11:03,538 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:11:03,538 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:11:03,538 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:11:03,859 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:11:07,564 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:10,969 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:11:11,096 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:11:11,097 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:11:13,284 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:18,319 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:22,890 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:11:22,890 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:11:22,890 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:11:22,892 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:11:23,002 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:11:23,898 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:26,105 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:11:26,106 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:11:29,316 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:34,344 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:39,376 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:40,974 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:11:41,102 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:11:41,103 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:11:42,062 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:11:42,063 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:11:42,063 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:11:42,064 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:11:42,126 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:11:45,083 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:50,119 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:55,154 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:11:56,113 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:11:56,113 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:12:00,379 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:00,420 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:12:00,421 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:12:00,421 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:12:00,422 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:12:01,258 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:12:05,463 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:10,495 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:10,990 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:12:11,133 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:12:11,133 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:12:16,408 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:19,916 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-25 10:12:19,916 DEBUG   SenderThread:11332 [sender.py:send():379] send: history
+2024-01-25 10:12:19,917 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: summary_record
+2024-01-25 10:12:19,917 INFO    SenderThread:11332 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2024-01-25 10:12:20,389 INFO    Thread-31 :11332 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100702-hl44kjm5\files\wandb-summary.json
+2024-01-25 10:12:21,940 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:26,145 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:12:26,146 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:12:27,440 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:32,477 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:37,512 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:40,992 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:12:41,152 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:12:41,153 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:12:43,423 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:48,458 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:53,495 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:12:56,165 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:12:56,165 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:12:59,441 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:04,476 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:09,511 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:10,999 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:13:11,158 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:13:11,159 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:13:15,442 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:20,474 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:25,509 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:26,182 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:13:26,183 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:13:31,504 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:36,542 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:41,001 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:13:41,193 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:13:41,193 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:13:46,230 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:13:46,821 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:51,856 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:13:56,202 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:13:56,202 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:13:56,202 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:13:57,386 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:02,419 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:07,451 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:11,016 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:14:11,208 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:14:11,224 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:14:11,224 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:14:15,961 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:20,991 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:26,029 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:26,221 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:14:26,237 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:14:26,237 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:14:31,504 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:36,533 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:41,023 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:14:41,231 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:14:41,247 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:14:41,247 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:14:42,526 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:47,563 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:52,599 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:14:56,244 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:14:56,260 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:14:56,260 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:14:58,495 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:03,529 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:08,563 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:11,024 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:15:11,248 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:15:11,264 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:15:11,264 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:15:13,566 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:18,603 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:23,634 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:26,258 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:15:26,273 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:15:26,273 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:15:29,545 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:34,581 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:39,615 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:41,038 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:15:41,261 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:15:41,277 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:15:41,277 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:15:45,577 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:50,612 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:55,647 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:15:56,254 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:15:56,270 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:15:56,270 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:16:01,576 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:06,613 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:11,041 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:16:11,264 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:16:11,280 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:16:11,280 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:16:12,543 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:17,579 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:22,614 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:26,276 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:16:26,292 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:16:26,292 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:16:28,577 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:33,614 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:38,648 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:41,045 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:16:41,269 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:16:41,285 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:16:41,285 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:16:44,481 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:49,515 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:54,553 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:16:56,279 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:16:56,295 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:16:56,295 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:17:00,546 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:05,574 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:10,607 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:11,053 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:17:11,293 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:17:11,309 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:17:11,309 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:17:16,600 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:21,633 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:26,300 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:17:26,332 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:17:26,332 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:17:27,610 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:32,643 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:37,675 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:41,064 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:17:41,304 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:17:41,352 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:17:41,352 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:17:43,623 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:48,658 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:53,692 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:17:56,306 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:17:56,354 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:17:56,354 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:17:59,630 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:18:04,664 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:18:09,696 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report
+2024-01-25 10:18:11,070 DEBUG   SenderThread:11332 [sender.py:send():379] send: stats
+2024-01-25 10:18:11,294 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-25 10:18:11,358 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-25 10:18:11,358 DEBUG   SenderThread:11332 [sender.py:send_request():406] send_request: stop_status
+2024-01-25 10:18:15,610 DEBUG   HandlerThread:11332 [handler.py:handle_request():144] handle_request: status_report

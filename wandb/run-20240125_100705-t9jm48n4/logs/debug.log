@@ -1,0 +1,52 @@
+2024-01-25 10:07:05,058 INFO    MainThread:14092 [wandb_setup.py:_flush():76] Current SDK version is 0.15.8
+2024-01-25 10:07:05,058 INFO    MainThread:14092 [wandb_setup.py:_flush():76] Configure stats pid to 14092
+2024-01-25 10:07:05,058 INFO    MainThread:14092 [wandb_setup.py:_flush():76] Loading settings from C:\Users\User\.config\wandb\settings
+2024-01-25 10:07:05,058 INFO    MainThread:14092 [wandb_setup.py:_flush():76] Loading settings from c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\settings
+2024-01-25 10:07:05,059 INFO    MainThread:14092 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-01-25 10:07:05,059 INFO    MainThread:14092 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-25 10:07:05,059 INFO    MainThread:14092 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-01-25 10:07:05,059 INFO    MainThread:14092 [wandb_init.py:_log_setup():507] Logging user logs to c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100705-t9jm48n4\logs\debug.log
+2024-01-25 10:07:05,060 INFO    MainThread:14092 [wandb_init.py:_log_setup():508] Logging internal logs to c:\Users\User\Documents\vesselvaeashish\VesselVAE\wandb\run-20240125_100705-t9jm48n4\logs\debug-internal.log
+2024-01-25 10:07:05,060 INFO    MainThread:14092 [wandb_init.py:init():547] calling init triggers
+2024-01-25 10:07:05,060 INFO    MainThread:14092 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'epochs': 20000, 'batch_size': 10, 'dataset': ['0001_tree.dat', '0002_tree.dat', '0003_tree.dat', '0004_tree.dat', '0005_tree.dat', '0006_tree.dat', '0007_tree.dat', '0008_tree.dat', '0009_tree.dat', '0010_tree.dat', '0011_tree.dat', '0012_tree.dat', '0013_tree.dat', '0014_tree.dat', '0015_tree.dat', '0016_tree.dat', '0017_tree.dat', '0018_tree.dat', '0019_tree.dat', '0020_tree.dat', '0021_tree.dat', '0022_tree.dat', '0023_tree.dat', '0024_tree.dat', '0025_tree.dat', '0026_tree.dat', '0027_tree.dat', '0028a_tree.dat', '0028b_tree.dat', '0029_tree.dat', '0030_tree.dat', '0031_tree.dat', '0032_tree.dat', '0033_tree.dat', '0034_tree.dat', '0035_tree.dat', '0036_tree.dat', '0037_tree.dat', '0038_tree.dat', '0039_tree.dat', '0040_tree.dat', '0041_tree.dat', '0042_tree.dat', '0043_tree.dat', '0044_tree.dat', '0045_tree.dat', '0046_tree.dat', '0047_tree.dat', '0048_tree.dat', '0049_tree.dat', '0050_tree.dat', '0051_tree.dat', '0052_tree.dat', '0053_tree.dat', '0054_tree.dat', '0055_tree.dat', '0056_tree.dat', '0057a_tree.dat', '0057b_tree.dat', '0058_tree.dat', '0059_tree.dat', '0060_tree.dat', '0061_tree.dat', '0062_tree.dat', '0063_tree.dat', '0064_tree.dat', '0065_tree.dat', '0066_tree.dat', '0067_tree.dat', '0068_tree.dat', '0069_tree.dat', '0070_tree.dat', '0071_tree.dat', '0073_tree.dat', '0074a_tree.dat', '0074b_tree.dat', '0075_tree.dat', '0076_tree.dat', '0077_tree.dat', '0078_tree.dat', '0079_tree.dat', '0080_tree.dat', '0081_tree.dat', '0082_tree.dat', '0083_tree.dat', '0084_tree.dat', '0085_tree.dat', '0086_tree.dat', '0087_tree.dat', '0088a_tree.dat', '0088b_tree.dat', '0089_tree.dat', '0090_tree.dat', '0091_tree.dat', '0093_tree.dat', '0094_tree.dat', '0095_tree.dat', '0096_tree.dat', '0097_tree.dat', '0098_tree.dat'], 'number of trees': 100, 'optim': Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0001
+    maximize: False
+    weight_decay: 0
+), 'latent_size': 16, 'params': 453991, 'prof': 10}
+2024-01-25 10:07:05,060 INFO    MainThread:14092 [wandb_init.py:init():571] re-initializing run, found existing run on stack: pzvi0o18
+2024-01-25 10:07:05,063 INFO    MainThread:14092 [wandb_run.py:_finish():1894] finishing run paufeldman/MIA/pzvi0o18
+2024-01-25 10:07:05,262 INFO    MainThread:14092 [jupyter.py:save_history():445] not saving jupyter history
+2024-01-25 10:07:05,262 INFO    MainThread:14092 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-25 10:07:05,262 INFO    MainThread:14092 [wandb_init.py:_jupyter_teardown():435] cleaning up jupyter logic
+2024-01-25 10:07:05,262 INFO    MainThread:14092 [wandb_run.py:_atexit_cleanup():2128] got exitcode: 0
+2024-01-25 10:07:05,262 INFO    MainThread:14092 [wandb_run.py:_restore():2111] restore
+2024-01-25 10:07:05,262 INFO    MainThread:14092 [wandb_run.py:_restore():2117] restore done
+2024-01-25 10:07:09,713 INFO    MainThread:14092 [wandb_run.py:_footer_history_summary_info():3481] rendering history
+2024-01-25 10:07:09,714 INFO    MainThread:14092 [wandb_run.py:_footer_history_summary_info():3513] rendering summary
+2024-01-25 10:07:09,718 INFO    MainThread:14092 [wandb_run.py:_footer_sync_info():3440] logging synced files
+2024-01-25 10:07:10,187 INFO    MainThread:14092 [wandb_init.py:init():596] starting backend
+2024-01-25 10:07:10,187 INFO    MainThread:14092 [wandb_init.py:init():600] setting up manager
+2024-01-25 10:07:10,192 INFO    MainThread:14092 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2024-01-25 10:07:10,193 INFO    MainThread:14092 [wandb_init.py:init():606] backend started and connected
+2024-01-25 10:07:10,210 INFO    MainThread:14092 [wandb_run.py:_label_probe_notebook():1234] probe notebook
+2024-01-25 10:07:10,210 INFO    MainThread:14092 [wandb_run.py:_label_probe_notebook():1244] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-01-25 10:07:10,210 INFO    MainThread:14092 [wandb_init.py:init():697] updated telemetry
+2024-01-25 10:07:10,252 INFO    MainThread:14092 [wandb_init.py:init():730] communicating run to backend with 60.0 second timeout
+2024-01-25 10:07:11,396 INFO    MainThread:14092 [wandb_run.py:_on_init():2180] communicating current version
+2024-01-25 10:07:11,777 INFO    MainThread:14092 [wandb_run.py:_on_init():2189] got version response upgrade_message: "wandb version 0.16.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-01-25 10:07:11,777 INFO    MainThread:14092 [wandb_init.py:init():781] starting run threads in backend
+2024-01-25 10:07:11,905 INFO    MainThread:14092 [wandb_run.py:_console_start():2159] atexit reg
+2024-01-25 10:07:11,906 INFO    MainThread:14092 [wandb_run.py:_redirect():2014] redirect: wrap_raw
+2024-01-25 10:07:11,906 INFO    MainThread:14092 [wandb_run.py:_redirect():2079] Wrapping output streams.
+2024-01-25 10:07:11,906 INFO    MainThread:14092 [wandb_run.py:_redirect():2104] Redirects installed.
+2024-01-25 10:07:11,906 INFO    MainThread:14092 [wandb_init.py:init():822] run started, returning control to user process

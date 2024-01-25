@@ -1,0 +1,159 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 0.0001
+epochs:
+  desc: null
+  value: 20000
+batch_size:
+  desc: null
+  value: 10
+dataset:
+  desc: null
+  value:
+  - 0001_tree.dat
+  - 0002_tree.dat
+  - 0003_tree.dat
+  - 0004_tree.dat
+  - 0005_tree.dat
+  - 0006_tree.dat
+  - 0007_tree.dat
+  - 0008_tree.dat
+  - 0009_tree.dat
+  - 0010_tree.dat
+  - 0011_tree.dat
+  - 0012_tree.dat
+  - 0013_tree.dat
+  - 0014_tree.dat
+  - 0015_tree.dat
+  - 0016_tree.dat
+  - 0017_tree.dat
+  - 0018_tree.dat
+  - 0019_tree.dat
+  - 0020_tree.dat
+  - 0021_tree.dat
+  - 0022_tree.dat
+  - 0023_tree.dat
+  - 0024_tree.dat
+  - 0025_tree.dat
+  - 0026_tree.dat
+  - 0027_tree.dat
+  - 0028a_tree.dat
+  - 0028b_tree.dat
+  - 0029_tree.dat
+  - 0030_tree.dat
+  - 0031_tree.dat
+  - 0032_tree.dat
+  - 0033_tree.dat
+  - 0034_tree.dat
+  - 0035_tree.dat
+  - 0036_tree.dat
+  - 0037_tree.dat
+  - 0038_tree.dat
+  - 0039_tree.dat
+  - 0040_tree.dat
+  - 0041_tree.dat
+  - 0042_tree.dat
+  - 0043_tree.dat
+  - 0044_tree.dat
+  - 0045_tree.dat
+  - 0046_tree.dat
+  - 0047_tree.dat
+  - 0048_tree.dat
+  - 0049_tree.dat
+  - 0050_tree.dat
+  - 0051_tree.dat
+  - 0052_tree.dat
+  - 0053_tree.dat
+  - 0054_tree.dat
+  - 0055_tree.dat
+  - 0056_tree.dat
+  - 0057a_tree.dat
+  - 0057b_tree.dat
+  - 0058_tree.dat
+  - 0059_tree.dat
+  - 0060_tree.dat
+  - 0061_tree.dat
+  - 0062_tree.dat
+  - 0063_tree.dat
+  - 0064_tree.dat
+  - 0065_tree.dat
+  - 0066_tree.dat
+  - 0067_tree.dat
+  - 0068_tree.dat
+  - 0069_tree.dat
+  - 0070_tree.dat
+  - 0071_tree.dat
+  - 0073_tree.dat
+  - 0074a_tree.dat
+  - 0074b_tree.dat
+  - 0075_tree.dat
+  - 0076_tree.dat
+  - 0077_tree.dat
+  - 0078_tree.dat
+  - 0079_tree.dat
+  - 0080_tree.dat
+  - 0081_tree.dat
+  - 0082_tree.dat
+  - 0083_tree.dat
+  - 0084_tree.dat
+  - 0085_tree.dat
+  - 0086_tree.dat
+  - 0087_tree.dat
+  - 0088a_tree.dat
+  - 0088b_tree.dat
+  - 0089_tree.dat
+  - 0090_tree.dat
+  - 0091_tree.dat
+  - 0093_tree.dat
+  - 0094_tree.dat
+  - 0095_tree.dat
+  - 0096_tree.dat
+  - 0097_tree.dat
+  - 0098_tree.dat
+number of trees:
+  desc: null
+  value: 100
+optim:
+  desc: null
+  value: "Adam (\nParameter Group 0\n    amsgrad: False\n    betas: (0.9, 0.999)\n\
+    \    capturable: False\n    differentiable: False\n    eps: 1e-08\n    foreach:\
+    \ None\n    fused: None\n    lr: 0.0001\n    maximize: False\n    weight_decay:\
+    \ 0\n)"
+latent_size:
+  desc: null
+  value: 16
+params:
+  desc: null
+  value: 453991
+prof:
+  desc: null
+  value: 10
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.15.8
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1706188030.193416
+    t:
+      1:
+      - 1
+      - 55
+      - 105
+      2:
+      - 1
+      - 55
+      - 105
+      3:
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.15.8
+      8:
+      - 1
+      - 3
+      - 5
