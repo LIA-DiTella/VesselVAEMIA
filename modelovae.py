@@ -6,6 +6,7 @@ import random
 random.seed(125)
 import numpy as np
 import torch_f as torch_f
+import re
 
 use_gpu = True
 device = torch.device("cuda:0" if use_gpu and torch.cuda.is_available() else "cpu")
@@ -41,7 +42,12 @@ def deserialize(data):
             nodes.pop()
             return None
         node = nodes.pop().split('_')
-        data = int(node[0])
+        try:
+            data = int(node[0])
+        except:
+            numbers = re.findall(r'\d+', node[0])
+            # Convert the extracted numbers to integers
+            data = [int(num) for num in numbers]
         radius = node[1]
         rad = radius.split(",")
         rad [0] = rad[0].replace('[','')
@@ -144,23 +150,6 @@ def setLevel(data_loader):
             tree.setTreeLevel(tree, sum(tree_level))
             tree.setMaxLevel(tree, max_level)
 
-'''
-def StructureLoss(cl_p, original, mult):
-        
-        if original is None:
-            return
-        ce = nn.CrossEntropyLoss(weight = mult)
-
-        if original.childs() == 0:
-            vector = [1, 0, 0] 
-        if original.childs() == 1:
-            vector = [0, 1, 0]
-        if original.childs() == 2:
-            vector = [0, 0, 1] 
-
-        c = ce(cl_p, torch.tensor(vector, device=device, dtype = torch.float).reshape(1, 3))
-        return c
-'''
 def numberNodes(data_loader, batch_size):
     n_no = []
     qzero = 0
@@ -513,7 +502,7 @@ class SampleDecoder(nn.Module):
         self.mlp1 = nn.Linear(feature_size, hidden_size)
         self.mlp2 = nn.Linear(hidden_size, hidden_size)
         self.mlp3 = nn.Linear(hidden_size, feature_size)
-        #self.mlp4 = nn.Linear(hidden_size, feature_size)
+        #self.mlp4 = nn.Linear(feature_size, feature_size)
         #self.mlp5 = nn.Linear(feature_size, feature_size)
         #self.dropout = nn.Dropout(0.1)
         
@@ -521,7 +510,7 @@ class SampleDecoder(nn.Module):
         self.tanh = nn.Tanh()
         
     def forward(self, input_feature):
-        output = self.LeakyReLu(self.mlp1(input_feature))
+        output = self.tanh(self.mlp1(input_feature))
         #output = self.dropout (output)
         output = self.tanh(self.mlp2(output))
         output = self.tanh(self.mlp3(output))
@@ -600,8 +589,6 @@ class Decoder(nn.Module):
         right_vector = self.right_branch(vector)
         left_vector  = self.left_branch(vector)
         return left_vector, right_vector, attr_vector
-
-
 
 class GRASSDecoder(nn.Module):
  
