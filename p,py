@@ -1,0 +1,32 @@
+from modelovae import Node
+
+
+
+def inorder_traversal(root):
+    if root:
+        inorder_traversal(root.left)
+        
+        inorder_traversal(root.right)
+        print(root.data, end=' ')
+
+# Example usage:
+# Assuming you have a tree defined, for instance, the one created in the previous example:
+
+# Creating the tree
+root = Node(1, [0.1, 0.2, 0.3, 0.4])
+
+root.right = Node(2, [0.1, 0.2, 0.3, 0.4])
+root.right.right = Node(3, [0.1, 0.2, 0.3, 0.4])
+
+root.right.left = Node(4, [0.1, 0.2, 0.3, 0.4])
+root.right.right.right = Node(5, [0.1, 0.2, 0.3, 0.4])
+root.right.right.right.right = Node(6, [0.1, 0.2, 0.3, 0.4])
+root.right.right.right.left = Node(7, [0.1, 0.2, 0.3, 0.4])
+
+
+# Inorder traversal
+print("Inorder Traversal:")
+inorder_traversal(root)
+print(" // ")
+serialized = root.serialize(root)
+print("serialized", serialized)
