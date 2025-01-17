@@ -9,7 +9,7 @@ import torch_f as torch_f
 import re
 
 use_gpu = True
-device = torch.device("cuda:0" if use_gpu and torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if use_gpu and torch.cuda.is_available() else "cpu")
 
 def traverse(root, tree):
        
@@ -149,6 +149,45 @@ def setLevel(data_loader):
             tree_level = [max_level - nodelevel for nodelevel in tree_level]
             tree.setTreeLevel(tree, sum(tree_level))
             tree.setMaxLevel(tree, max_level)
+
+def computeSubtreeSizes(node, subtree_sizes):
+    if not node:
+        return 0
+    
+    # Recursively calculate subtree sizes for children
+    left_size = computeSubtreeSizes(node.left, subtree_sizes) if node.left else 0
+    right_size = computeSubtreeSizes(node.right, subtree_sizes) if node.right else 0
+    
+    # Subtree size is itself + size of its left and right subtrees
+    total_size = 1 + left_size + right_size
+    subtree_sizes.append(total_size)
+    
+    return total_size
+
+
+def setWeights(data_loader):
+    for d in data_loader:
+        for data in d:
+            tree = list(data.keys())[0]  # Assuming the first key is the tree
+            n_nodes = data[tree]  # Total number of nodes
+            
+            # Step 1: Compute subtree sizes for each node
+            subtree_sizes = []
+            computeSubtreeSizes(tree, subtree_sizes)  # Custom function to calculate subtree sizes
+            
+            # Step 2: Calculate the total sum of all subtree sizes
+            total_size_sum = sum(subtree_sizes)
+            
+            # Step 3: Assign weights to each node
+            weights = [size / total_size_sum for size in subtree_sizes]
+            
+            # Step 4: Update the tree with weights
+            for idx, weight in enumerate(weights):
+                node = searchNode(tree, idx)  # Find the node by index
+                node.level = weight  # Assign the calculated weight
+            
+            #print(f"Weights for tree {tree}: {weights}")
+
 
 def numberNodes(data_loader, batch_size):
     n_no = []
@@ -430,7 +469,7 @@ class InternalEncoder(nn.Module):
 
 
     def forward(self, input, right_input, left_input):
-        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         # Encodeo los atributos
         attributes = self.attribute_lin_encoder_1(input)
         attributes = self.LeakyReLu(attributes)
@@ -641,7 +680,7 @@ class GRASSDecoder(nn.Module):
 
 
     def classifyLossEstimator(self, label_vector, original):
-        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         if original is None:
             return
         else:
@@ -675,3 +714,15 @@ class GRASSDecoder(nn.Module):
         for c, d in z:
             r.append(torch.mul(c, d))
         return r
+    
+
+
+
+
+'''
+class Node:
+    def __init__(self, attributes, right = None, left = None):
+        
+        self.right = right
+        self.left = left
+        self.attributes = attributes'''
